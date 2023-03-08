@@ -1,0 +1,103 @@
+.tysection {
+    padding: 50px 0 65px 0;
+
+    .tytexts {
+        padding-top: 100px;
+        h1 {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 106px;
+            line-height: 147%;
+            color: #222;
+        }
+
+        .descr {
+            margin-bottom: 60px;
+
+            p {
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 150%;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .blue-btn {
+            min-width: 216px;
+        }
+    }
+
+    .picwrap {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
+@media(max-width:1399.8px) {
+    .tysection .tytexts h1 {
+        font-size: 65px;
+    }
+
+    .tysection .tytexts .descr p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .tysection .tytexts h1 {
+        font-size: 50px;
+    }
+
+    .tysection .tytexts .descr p {
+        font-size: 16px;
+    }
+
+    .tysection .tytexts .descr {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .tysection .tytexts {
+        padding-top: 0;
+    }
+
+    .tysection .picwrap img {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .tysection .tytexts {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .tysection .tytexts h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .tysection .tytexts .blue-btn {
+        max-width: 200px;
+    }
+
+    .tysection .tytexts .descr {
+        margin-bottom: 30px;
+        br {
+            display: none;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+
+}

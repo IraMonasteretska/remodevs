@@ -1,0 +1,273 @@
+.salariescalc {
+    padding: 50px 0;
+}
+
+.salariesformwrapper {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #B9D4FF;
+}
+
+.salariescalc__inpwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.salariescalc {
+
+    .salariescalc__inpwrap-left {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .salariescalc__inpwrap-right {
+        text-align: right;
+    }
+
+    .inputfield.selectfield {
+        width: 100%;
+        max-width: 320px;
+        flex: 0 0 320px;
+
+        &:first-child {
+            margin-right: 84px;
+        }
+    }
+}
+
+.careerformsection.selaries {
+    padding: 40px 0 48px !important;
+}
+
+.salariescalc__continfo {
+    p {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 147%;
+        color: #272020;
+        margin-bottom: 50px;
+    }
+}
+
+.salaries__resultbox {
+    padding: 80px 50px 124px 50px;
+    background: #FCFCFC;
+    border: 1.5px solid #2B7CFF;
+    box-shadow: 0px 3.67457px 18.3728px rgba(0, 0, 0, 0.09);
+    border-radius: 9px;
+    margin-top: 50px;
+}
+
+.salaries__resrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .leftbox {
+        width: 100%;
+        max-width: 584px;
+        flex: 0 0 584px;
+
+        .title {
+            color: #222222;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 147%;
+            margin-bottom: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                position: relative;
+                padding-left: 18px;
+                margin-bottom: 23px;
+                color: #6B6B6B;
+                font-weight: 500;
+                font-size: 23px;
+                line-height: 147%;
+
+                span {
+                    color: #222222;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    border-radius: 50%;
+                    background: #1B6DFF;
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    left: 0;
+                    top: 13px;
+                }
+            }
+        }
+    }
+
+    .rightbox {
+        width: 100%;
+        max-width: calc(100% - 584px);
+        flex: 0 0 calc(100% - 584px);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.salaries__resrow .rightbox img {
+    max-width: 100%;
+}
+
+.salaries__resultbox {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .salariescalc .inputfield.selectfield:first-child {
+        margin-right: 40px;
+    }
+
+    .salariescalc .inputfield.selectfield {
+        max-width: 280px;
+        flex: 0 0 280px;
+    }
+
+    .salaries__resultbox {
+        padding: 60px 50px;
+    }
+
+    .salaries__resrow .leftbox .title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .salaries__resrow .leftbox ul li {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .salariescalc__continfo p {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .salariescalc__inpwrap-left {
+        justify-content: space-between;
+    }
+
+    .salariescalc .inputfield.selectfield:first-child {
+        margin-right: 0;
+    }
+
+    .salariescalc .inputfield.selectfield {
+        max-width: calc(50% - 10px);
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .salaries__resrow .leftbox {
+        max-width: 70%;
+        flex: 0 0 70%;
+    }
+
+    .salaries__resrow .rightbox {
+        max-width: 30%;
+        flex: 0 0 30%;
+    }
+
+    .salaries__resultbox {
+        padding: 40px;
+    }
+
+    .selaries .careerformsection__body {
+
+        .picwrap {
+            display: block;
+            max-width: 480px;
+            margin: 0 auto 30px;
+        }
+
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 1;
+            }
+
+            &:nth-child(2) {
+                order: 2;
+            }
+        }
+    }
+
+    .salariescalc__continfo {
+        text-align: center;
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .careerformsection.selaries {
+        padding: 20px 0 70px !important;
+    }
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .salaries__resrow .leftbox {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .salaries__resrow .rightbox {
+        display: none;
+    }
+}
+
+@media(max-width:575.8px) {
+    .salaries__resrow .leftbox .title {
+        font-size: 20px;
+    }
+
+    .salaries__resultbox {
+        padding: 30px 20px;
+    }
+
+    .salaries__resrow .leftbox ul li {
+        font-size: 16px;
+    }
+
+    .salaries__resrow .leftbox ul li:after {
+        top: 8px;
+    }
+
+    .salaries__resrow {
+        margin-bottom: 60px;
+    }
+
+    .salariescalc__continfo p {
+        font-size: 20px;
+    }
+
+
+}

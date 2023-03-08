@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #424242;
+}
+
+@media(min-width:1450.8px) {
+    .container {
+        max-width: 1420px;
+    }
+}
+
+.main {
+    padding-top: 93px;
+}
+
+.blue-btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    background: #1B6DFF;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    padding: 3px 55px;
+    transition: 0.3s;
+    border: 1px solid #1B6DFF;
+
+    &:hover {
+        color: #fff;
+        box-shadow: 0px 2px 10px #1b6dff;
+
+        img, svg {
+            transform: translateX(5px);
+        }
+    }
+
+    img, svg {
+        margin-left: 15px;
+        transition: 0.3s;
+    }
+
+    svg {
+        path {
+            transition: 0.3s;
+        }
+    }
+
+    &.border-hover {
+        &:hover {
+            box-shadow: none;
+            background: transparent;
+            color: #1B6DFF;
+
+            svg {
+                path {
+                    stroke: #1B6DFF;
+                }
+            }
+        }
+    }
+}
+
+.blue-btn.white {
+    background: transparent;
+    border: 1px solid #1B6DFF;
+    color: #1B6DFF;
+
+    svg {
+        path {
+            transition: 0.3s;
+        }
+    }
+
+    &:hover {
+        box-shadow: none;
+        color: #fff;
+        background: #1B6DFF;
+
+        svg {
+            path {
+                stroke: #fff;
+            }
+        }
+    }
+}
+
+.blacksection {
+    background: #1B1B1B;
+}
+
+.subtitle {
+    font-size: 23px;
+    line-height: 147%;
+    color: #2B7CFF;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 147%;
+    color: #222222;
+}
+
+.formsection.black .formsection__form  {
+
+    .formbtn {
+        border: 1px solid #1B6DFF;
+
+        &:hover {
+            background: transparent;
+            box-shadow: none;
+            color: #1B6DFF;
+
+            svg {
+                path {
+                    fill: #1B6DFF;
+                }
+            }
+        }
+    }
+    
+}
+
+:root {
+    scroll-behavior: inherit;
+}
